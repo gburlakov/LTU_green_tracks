@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Синтезирана постъпкова инструкция за начинаещи за Упражнение 2 по Електронен бизнес и търговия в туризма."/>
+<title>Упражнение 2 · Постъпкова инструкция</title>
+<style>
+
+:root {
+  --bg: #f4f7f3;
+  --paper: #ffffff;
+  --ink: #17231d;
+  --muted: #5e6d64;
+  --line: #dbe5dd;
+  --brand: #246b45;
+  --brand-dark: #17472f;
+  --brand-soft: #e9f3ec;
+  --accent: #9a6b2f;
+  --code-bg: #15221b;
+  --code-ink: #eef8f1;
+  --shadow: 0 12px 32px rgba(23, 71, 47, .08);
+  --radius: 18px;
+  --content: 860px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  line-height: 1.68;
+  font-size: 17px;
+}
+a { color: var(--brand-dark); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { color: var(--brand); }
+.site-header {
+  position: sticky; top: 0; z-index: 30;
+  background: rgba(244,247,243,.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.topbar {
+  max-width: 1320px; margin: 0 auto; min-height: 64px; padding: 9px 24px;
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 14px; align-items: center;
+}
+.brand { font-weight: 800; text-decoration: none; color: var(--brand-dark); letter-spacing: -.02em; }
+.topbar-center { color: var(--muted); font-size: .92rem; text-align: center; white-space: nowrap; }
+.topbar-actions { justify-self: end; display: flex; gap: 8px; }
+.nav-button {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 7px 12px;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--brand-dark);
+  text-decoration: none; font-weight: 700; font-size: .88rem;
+}
+.nav-button:hover { border-color: #aec4b4; background: var(--brand-soft); }
+.progress-track { height: 3px; background: #dfe8e1; }
+.progress-value { height: 100%; background: linear-gradient(90deg, var(--brand), #4e996a); }
+.page-shell {
+  max-width: 1320px; margin: 0 auto; padding: 34px 24px 72px;
+  display: grid; grid-template-columns: minmax(0, var(--content)) 300px; gap: 42px; align-items: start;
+}
+.article-card {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: clamp(28px, 5vw, 58px);
+}
+.exercise-kicker {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px;
+}
+.badge {
+  display: inline-flex; align-items: center; border: 1px solid #cfe0d3; background: var(--brand-soft);
+  color: var(--brand-dark); border-radius: 999px; padding: 5px 10px; font-size: .78rem; font-weight: 800;
+}
+.badge.stage { background: #f8f2e9; border-color: #eadbc4; color: #6c4a20; }
+article h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.08; letter-spacing: -.04em; margin: .25em 0 .45em; color: var(--brand-dark); }
+article h2 { font-size: clamp(1.35rem, 3vw, 1.8rem); line-height: 1.22; letter-spacing: -.02em; margin: 2.2em 0 .65em; padding-top: .25em; color: #1c5037; }
+article h3 { font-size: 1.15rem; margin: 1.8em 0 .55em; color: #284f3b; }
+article p { margin: .85em 0; }
+article > p:nth-of-type(1) { font-size: 1.06rem; }
+article strong { color: #21392c; }
+article ul, article ol { padding-left: 1.45em; }
+article li { margin: .34em 0; }
+article img { display: block; max-width: 100% !important; height: auto !important; margin: 1.35rem auto; border-radius: 12px; }
+article figure { margin: 1.8rem 0; }
+article figcaption { color: var(--muted); font-size: .9rem; text-align: center; }
+.table-wrap { width: 100%; overflow-x: auto; margin: 1.35rem 0 1.7rem; border: 1px solid var(--line); border-radius: 12px; }
+article table { width: 100% !important; border-collapse: collapse; margin: 0; font-size: .92rem; background: #fff; }
+article th, article td { border-bottom: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+article th { background: #eef5f0; color: #234a34; font-weight: 800; }
+article tr:last-child td { border-bottom: 0; }
+article blockquote {
+  margin: 1.3rem 0; padding: 14px 18px; border-left: 4px solid #8fbc9c; background: #f1f7f3;
+  border-radius: 0 10px 10px 0; color: #294437;
+}
+article pre {
+  position: relative; overflow-x: auto; margin: 1.25rem 0 1.6rem; padding: 18px 20px;
+  background: var(--code-bg); color: var(--code-ink); border-radius: 13px; border: 1px solid #263a30;
+  font: 0.88rem/1.58 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  white-space: pre; tab-size: 4;
+}
+article code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+article p code, article li code { background: #edf3ef; border: 1px solid #d8e3db; border-radius: 6px; padding: .08em .33em; color: #244732; }
+.toc {
+  position: sticky; top: 94px; max-height: calc(100vh - 120px); overflow: auto;
+  background: rgba(255,255,255,.78); border: 1px solid var(--line); border-radius: 16px; padding: 18px;
+}
+.toc h2 { margin: 0 0 10px; font-size: .98rem; color: var(--brand-dark); }
+.toc ol { list-style: none; padding: 0; margin: 0; }
+.toc li { margin: 0; }
+.toc a { display: block; padding: 6px 8px; border-radius: 7px; color: #496157; text-decoration: none; font-size: .83rem; line-height: 1.3; }
+.toc a:hover { background: var(--brand-soft); color: var(--brand-dark); }
+.bottom-nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; margin-top: 30px; }
+.bottom-nav .next { justify-self: end; }
+.bottom-nav .home { justify-self: center; }
+.source-note { margin-top: 28px; color: #748179; font-size: .78rem; border-top: 1px solid var(--line); padding-top: 14px; overflow-wrap: anywhere; }
+
+/* index */
+.home-body { background: linear-gradient(180deg, #edf4ef 0, #f6f8f6 360px, #f4f7f3 100%); }
+.home-header { max-width: 1180px; margin: 0 auto; padding: 64px 24px 28px; }
+.home-eyebrow { color: var(--brand); font-weight: 800; text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; }
+.home-title { max-width: 900px; margin: 12px 0 18px; font-size: clamp(2.5rem, 7vw, 5rem); line-height: .98; letter-spacing: -.055em; color: var(--brand-dark); }
+.home-lead { max-width: 790px; margin: 0; color: #52655a; font-size: clamp(1rem, 2vw, 1.22rem); }
+.home-metrics { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+.metric { background: rgba(255,255,255,.78); border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px; }
+.metric strong { display: block; color: var(--brand-dark); font-size: 1.15rem; }
+.metric span { color: var(--muted); font-size: .8rem; }
+.index-shell { max-width: 1180px; margin: 0 auto; padding: 16px 24px 72px; }
+.stage-map { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; margin: 0 0 38px; }
+.stage-dot { min-height: 8px; border-radius: 999px; background: #c8d8cd; }
+.stage-dot:nth-child(-n+8) { background: linear-gradient(90deg,#6ca47d,#2d7550); }
+.search-row { display: flex; gap: 12px; align-items: center; margin: 0 0 34px; }
+.search-box { width: min(100%, 520px); background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 12px 16px; font: inherit; outline: none; }
+.search-box:focus { border-color: #82ad90; box-shadow: 0 0 0 4px rgba(73,143,95,.10); }
+.stage-section { margin: 46px 0; }
+.stage-heading { display: grid; grid-template-columns: minmax(0,1fr) minmax(250px, .8fr); gap: 24px; align-items: end; padding-bottom: 15px; border-bottom: 1px solid var(--line); }
+.stage-heading h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.15rem); color: var(--brand-dark); letter-spacing: -.03em; }
+.stage-heading p { margin: 0; color: var(--muted); font-size: .92rem; }
+.cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin-top: 18px; }
+.exercise-card { position: relative; display: block; min-height: 220px; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px; text-decoration: none; box-shadow: 0 10px 28px rgba(23,71,47,.045); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }
+.exercise-card:hover { transform: translateY(-3px); border-color: #adc7b5; box-shadow: 0 16px 34px rgba(23,71,47,.10); }
+.card-number { display: inline-flex; min-width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 12px; background: var(--brand-soft); color: var(--brand-dark); font-weight: 900; }
+.card-stage { position: absolute; right: 18px; top: 18px; color: #7c694c; font-size: .76rem; font-weight: 800; }
+.exercise-card h3 { margin: 18px 0 8px; color: #1a442f; font-size: 1.16rem; line-height: 1.25; }
+.exercise-card p { margin: 0; color: #617066; font-size: .91rem; line-height: 1.5; }
+.card-arrow { position: absolute; right: 20px; bottom: 17px; font-size: 1.2rem; color: #7ba187; }
+.index-footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: .86rem; }
+.hidden-card { display: none !important; }
+.no-results { display:none; padding: 18px; border:1px dashed #b6c9bb; border-radius: 12px; color: var(--muted); }
+
+@media (max-width: 980px) {
+  .page-shell { grid-template-columns: 1fr; }
+  .toc { position: static; max-height: none; order: -1; }
+  .topbar { grid-template-columns: 1fr auto; }
+  .topbar-center { display: none; }
+  .stage-heading { grid-template-columns: 1fr; gap: 8px; }
+}
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+  .topbar { padding: 8px 14px; }
+  .brand { max-width: 180px; font-size: .9rem; }
+  .nav-button { padding: 7px 9px; font-size: .8rem; }
+  .page-shell { padding: 18px 12px 50px; }
+  .article-card { padding: 24px 18px; border-radius: 14px; }
+  .cards { grid-template-columns: 1fr; }
+  .home-header { padding-top: 42px; }
+  .stage-map { grid-template-columns: repeat(4,1fr); }
+  .bottom-nav { grid-template-columns: 1fr 1fr; }
+  .bottom-nav .home { grid-column: 1 / -1; grid-row: 2; }
+}
+@media print {
+  body { background: #fff; font-size: 11pt; }
+  .site-header, .toc, .bottom-nav, .source-note { display: none !important; }
+  .page-shell { display: block; max-width: none; padding: 0; }
+  .article-card { box-shadow: none; border: 0; padding: 0; }
+  article a { color: #000; text-decoration: none; }
+  article h2, article h3 { break-after: avoid-page; }
+  article pre, article table, article img { break-inside: avoid; }
+}
+
+
+.step-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 1.4rem 0;
+  background: #fbfdfb;
+}
+.step-card h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.do-now {
+  border-left: 4px solid var(--brand);
+  background: var(--brand-soft);
+  padding: 12px 16px;
+  border-radius: 0 10px 10px 0;
+  margin: 1rem 0;
+}
+.check {
+  border-left: 4px solid var(--accent);
+  background: #fbf6ee;
+  padding: 12px 16px;
+  border-radius: 0 10px 10px 0;
+  margin: 1rem 0;
+}
+.mini-output {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+.code-label {
+  font-weight: 800;
+  margin: 1.1rem 0 .45rem;
+  color: #284f3b;
+}
+.small-note {
+  color: var(--muted);
+  font-size: .92rem;
+}
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="topbar">
+    <div class="brand">Електронен бизнес и търговия в туризма</div>
+    <div class="topbar-center">Упражнение 2 · кратка инструкция</div>
+    <div class="topbar-actions"><span class="nav-button">За начинаещи</span></div>
+  </div>
+  <div class="progress-track"><div class="progress-value" style="width:13.33%"></div></div>
+</header>
+
+<main class="page-shell">
+<div>
+<section class="article-card">
+<div class="exercise-kicker">
+  <span class="badge">90 минути</span>
+  <span class="badge stage">UI/UX и фронтенд</span>
+</div>
+
+<article>
+<h1>Упражнение 2: от първата web страница до интерактивен туристически сайт</h1>
+
+<p><strong>Цел:</strong> да надградите работещия проект от Упражнение 1, като разделите HTML, CSS и JavaScript, добавите три туристически оферти, responsive дизайн, форма за заявка и първа интерактивна логика.</p>
+
+<blockquote>
+<strong>Важно:</strong> не започвайте от празен проект. Работете върху копие на работещата версия от Упражнение 1. Така винаги ще имате безопасна предишна версия.
+</blockquote>
+
+<div class="step-card">
+<h2 id="step-1">Стъпка 1. Направете копие на проекта от Упражнение 1</h2>
+<ol>
+<li>Намерете папката на проекта от предишното упражнение.</li>
+<li>Направете нейно копие.</li>
+<li>Преименувайте копието на <code>zeleni-pateki-bulgaria-v2</code>.</li>
+<li>Отворете новата папка във VS Code чрез <strong>File → Open Folder</strong>.</li>
+<li>Проверете, че вътре има старият <code>index.html</code>.</li>
+<li>Отворете страницата в browser и се уверете, че старата версия още работи.</li>
+</ol>
+<div class="check"><strong>Проверка:</strong> ако страницата от Упражнение 1 се вижда нормално, можете да продължите.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-2">Стъпка 2. Създайте трите основни файла</h2>
+<p>Ще разделим проекта на три роли:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Файл</th><th>Роля</th></tr></thead>
+<tbody>
+<tr><td><code>index.html</code></td><td>структура и съдържание</td></tr>
+<tr><td><code>styles.css</code></td><td>визуален дизайн</td></tr>
+<tr><td><code>script.js</code></td><td>поведение и интерактивност</td></tr>
+</tbody></table></div>
+<ol>
+<li>В Explorer създайте <code>styles.css</code>.</li>
+<li>Създайте <code>script.js</code>.</li>
+<li>Създайте папка <code>images</code>.</li>
+</ol>
+<div class="do-now"><strong>Внимание:</strong> <code>styles.css</code> и <code>style.css</code> са различни имена. Пишете точно.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-3">Стъпка 3. Свържете index.html със styles.css</h2>
+<p>Заменете началната част на <code>index.html</code> със следната структура:</p>
+<pre>&lt;!doctype html&gt;
+&lt;html lang="bg"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport"
+        content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Зелени пътеки България&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p class="small-note">Редът с <code>viewport</code> е важен за телефони, а <code>&lt;link&gt;</code> свързва HTML документа с CSS файла.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-4">Стъпка 4. Добавете header, навигация и hero секция</h2>
+<p>Между <code>&lt;body&gt;</code> и <code>&lt;/body&gt;</code> добавете:</p>
+<pre>&lt;header class="site-header"&gt;
+  &lt;div class="container header-inner"&gt;
+    &lt;a class="brand" href="#top"&gt;Зелени пътеки България&lt;/a&gt;
+    &lt;nav aria-label="Основна навигация"&gt;
+      &lt;a href="#offers"&gt;Оферти&lt;/a&gt;
+      &lt;a href="#about"&gt;За нас&lt;/a&gt;
+      &lt;a href="#booking"&gt;Заявка&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;main id="top"&gt;
+  &lt;section class="hero"&gt;
+    &lt;div class="container hero-content"&gt;
+      &lt;p class="eyebrow"&gt;Алтернативен туризъм с малки групи&lt;/p&gt;
+      &lt;h1&gt;Открий България по зелените пътеки&lt;/h1&gt;
+      &lt;p&gt;Планински преходи, веломаршрути и природни преживявания с местни водачи.&lt;/p&gt;
+      &lt;a class="button" href="#offers"&gt;Разгледай офертите&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</pre>
+<div class="check"><strong>Проверка:</strong> Save → Refresh. Текстът и линковете трябва да се виждат, дори страницата още да не изглежда красиво.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-5">Стъпка 5. Добавете три туристически оферти</h2>
+<p>Поставете три подходящи изображения в папка <code>images</code>, например:</p>
+<ul>
+<li><code>rodopi.jpg</code></li>
+<li><code>belogradchik.jpg</code></li>
+<li><code>shabla.jpg</code></li>
+</ul>
+<p>След hero секцията, но вътре в <code>&lt;main&gt;</code>, добавете секцията за оферти:</p>
+<pre>&lt;section id="offers" class="section container"&gt;
+  &lt;h2&gt;Нашите предложения&lt;/h2&gt;
+  &lt;p class="lead"&gt;Изберете преживяване и изпратете заявка.&lt;/p&gt;
+
+  &lt;div class="cards"&gt;
+
+    &lt;article class="card"&gt;
+      &lt;img src="images/rodopi.jpg"
+           alt="Планинска гледка от Родопите"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h3&gt;Уикенд в Родопите&lt;/h3&gt;
+        &lt;p&gt;Два дни с водач, маркирани пътеки и посещение на местно стопанство.&lt;/p&gt;
+        &lt;p class="price"&gt;220 лв. / човек&lt;/p&gt;
+        &lt;a href="#booking"&gt;Изпрати заявка&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+
+    &lt;!-- Добавете още две card оферти по същия модел --&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+
+<p>След офертите добавете и кратка секция „За нас“:</p>
+<pre>&lt;section id="about" class="section section-soft"&gt;
+  &lt;div class="container narrow"&gt;
+    &lt;h2&gt;Защо „Зелени пътеки България“?&lt;/h2&gt;
+    &lt;p&gt;Работим с малки групи, местни партньори и ясни правила за безопасност.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<div class="check"><strong>Проверка:</strong> линковете „Оферти“ и „За нас“ трябва да водят до правилните секции. <code>href="#offers"</code> трябва да съвпада с <code>id="offers"</code>.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-6">Стъпка 6. Добавете основния дизайн в styles.css</h2>
+<p>В <code>styles.css</code> поставете началните правила:</p>
+<pre>:root {
+  --green: #22543d;
+  --green-2: #2f855a;
+  --paper: #fbfaf5;
+  --soft: #eef6ef;
+  --ink: #1f2933;
+  --border: #d9e4dc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e5f3e6 0%, #f8f4df 100%);
+  padding: 72px 0;
+}
+
+h1 {
+  color: var(--green);
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  line-height: 1.05;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.price {
+  color: var(--green);
+  font-weight: 700;
+}</pre>
+<div class="do-now"><strong>Не учете CSS наизуст.</strong> Гледайте как всяко правило променя страницата: <code>grid</code> подрежда cards, <code>gap</code> добавя разстояние, <code>padding</code> дава вътрешно пространство.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-7">Стъпка 7. Направете сайта responsive</h2>
+<p>В края на <code>styles.css</code> добавете:</p>
+<pre>@media (max-width: 760px) {
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px 0;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+}</pre>
+<ol>
+<li>Save.</li>
+<li>Refresh.</li>
+<li>Намалете ширината на browser прозореца.</li>
+</ol>
+<div class="check"><strong>Проверка:</strong> под 760 px трите cards трябва да се подредят една под друга.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-8">Стъпка 8. Добавете форма за туристическа заявка</h2>
+<p>След секцията „За нас“ добавете:</p>
+<pre>&lt;section id="booking" class="section container narrow"&gt;
+  &lt;h2&gt;Изпрати заявка&lt;/h2&gt;
+  &lt;p&gt;Попълнете учебна заявка. Не въвеждайте реални лични данни.&lt;/p&gt;
+
+  &lt;form id="booking-form"&gt;
+
+    &lt;div class="field"&gt;
+      &lt;label for="name"&gt;Име&lt;/label&gt;
+      &lt;input id="name" name="name" type="text" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="field"&gt;
+      &lt;label for="email"&gt;E-mail&lt;/label&gt;
+      &lt;input id="email" name="email" type="email" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="field"&gt;
+      &lt;label for="tour"&gt;Избрана оферта&lt;/label&gt;
+      &lt;select id="tour" name="tour" required&gt;
+        &lt;option value=""&gt;-- Изберете --&lt;/option&gt;
+        &lt;option value="rodopi"&gt;Уикенд в Родопите&lt;/option&gt;
+        &lt;option value="belogradchik"&gt;Вело уикенд край Белоградчик&lt;/option&gt;
+        &lt;option value="shabla"&gt;Наблюдение на птици край Шабла&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div class="field"&gt;
+      &lt;label for="people"&gt;Брой участници&lt;/label&gt;
+      &lt;input id="people" name="people" type="number"
+             min="1" max="12" value="2" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="field"&gt;
+      &lt;label for="date"&gt;Предпочитана дата&lt;/label&gt;
+      &lt;input id="date" name="date" type="date" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="field"&gt;
+      &lt;label for="notes"&gt;Бележка&lt;/label&gt;
+      &lt;textarea id="notes" name="notes" rows="4"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+    &lt;button class="button" type="submit"&gt;Провери заявката&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;div id="booking-result" class="result" aria-live="polite"&gt;&lt;/div&gt;
+&lt;/section&gt;</pre>
+
+<p>В <code>styles.css</code> добавете:</p>
+<pre>form {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  padding: 11px 12px;
+  border: 1px solid #aab8ae;
+  border-radius: 7px;
+  background: white;
+}</pre>
+<div class="do-now"><strong>Използвайте само учебни или измислени данни.</strong></div>
+</div>
+
+<div class="step-card">
+<h2 id="step-9">Стъпка 9. Свържете JavaScript файла</h2>
+<p>Точно преди <code>&lt;/body&gt;</code> в <code>index.html</code> добавете:</p>
+<pre>&lt;script src="script.js"&gt;&lt;/script&gt;</pre>
+<p>След това отворете <code>script.js</code>.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-10">Стъпка 10. Добавете първата JavaScript логика</h2>
+<p>Поставете в <code>script.js</code>:</p>
+<pre>const form = document.getElementById("booking-form");
+const result = document.getElementById("booking-result");
+
+const tours = {
+  rodopi: {
+    name: "Уикенд в Родопите",
+    price: 220
+  },
+  belogradchik: {
+    name: "Вело уикенд край Белоградчик",
+    price: 260
+  },
+  shabla: {
+    name: "Наблюдение на птици край Шабла",
+    price: 180
+  }
+};
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const tourKey = document.getElementById("tour").value;
+  const people = Number(document.getElementById("people").value);
+  const date = document.getElementById("date").value;
+
+  const tour = tours[tourKey];
+  const total = tour.price * people;
+
+  result.className = "result success";
+  result.innerHTML = `
+    &lt;strong&gt;Заявката е проверена.&lt;/strong&gt;&lt;br&gt;
+    ${name}, избрали сте „${tour.name}“
+    за ${people} участници.&lt;br&gt;
+    Предпочитана дата: ${date}.&lt;br&gt;
+    Ориентировъчна стойност: ${total} лв.&lt;br&gt;
+    Потвърждение би било изпратено на ${email},
+    но данните все още не напускат browser-а.
+  `;
+});</pre>
+
+<p>И в <code>styles.css</code>:</p>
+<pre>.result.success {
+  margin-top: 20px;
+  padding: 16px;
+  background: #e8f6ed;
+  border-left: 4px solid var(--green-2);
+}</pre>
+
+<ol>
+<li>Save и трите файла.</li>
+<li>Refresh.</li>
+<li>Попълнете тестови данни.</li>
+<li>Изберете оферта и брой участници.</li>
+<li>Натиснете <strong>„Провери заявката“</strong>.</li>
+</ol>
+
+<div class="check"><strong>Проверка:</strong> показаната сума трябва да е <em>цена × брой участници</em>.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-11">Стъпка 11. Разберете какво направихте с JavaScript</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Термин</th><th>Какво направихме</th></tr></thead>
+<tbody>
+<tr><td>DOM</td><td>Намерихме form и полета чрез <code>document.getElementById(...)</code>.</td></tr>
+<tr><td>Event</td><td>Реагирахме на <code>submit</code>.</td></tr>
+<tr><td>Variable</td><td>Запазихме name, email, people, date и tour.</td></tr>
+<tr><td>Object</td><td>Събрахме имената и цените в <code>tours</code>.</td></tr>
+<tr><td>Validation</td><td>Проверихме <code>required</code>, e-mail формат и min/max.</td></tr>
+<tr><td>Template literal</td><td>Сглобихме резултат с <code>${...}</code>.</td></tr>
+</tbody></table></div>
+<p><strong>Важно:</strong> данните не се изпращат към реален server и изчезват след Refresh. Това е очаквано за тази версия.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-12">Стъпка 12. Използвайте Developer Tools при грешка</h2>
+<ol>
+<li>Отворете сайта.</li>
+<li>Натиснете <strong>F12</strong>.</li>
+<li>В <strong>Elements</strong> намерете <code>h1</code> и временно променете текста.</li>
+<li>Refresh — промяната ще изчезне, защото не сте редактирали source файла.</li>
+<li>Отворете <strong>Console</strong> и проверете за червени грешки.</li>
+</ol>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Проблем</th><th>Проверете</th></tr></thead>
+<tbody>
+<tr><td>Навигацията не мести страницата</td><td>Съвпадат ли <code>href="#offers"</code> и <code>id="offers"</code>?</td></tr>
+<tr><td>Cards са една под друга на широк екран</td><td>Има ли <code>display:grid</code> и правилен <code>grid-template-columns</code>?</td></tr>
+<tr><td>Submit не прави нищо</td><td>Свързан ли е <code>script.js</code>? Има ли грешка в Console?</td></tr>
+<tr><td>JavaScript казва, че form е null</td><td>Съвпада ли <code>booking-form</code> в HTML и JS?</td></tr>
+<tr><td>Цената е NaN</td><td>Използвате ли <code>Number(...)</code> и избрана ли е оферта?</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="step-card">
+<h2 id="step-13">Стъпка 13. Стартирайте local web server</h2>
+<p>Тази стъпка е за VS Code Desktop или GitHub Codespaces. Ако работите само във <code>vscode.dev</code>, може да я пропуснете.</p>
+<ol>
+<li>Изберете <strong>Terminal → New Terminal</strong>.</li>
+<li>Проверете, че terminal-ът е в папката <code>zeleni-pateki-bulgaria-v2</code>.</li>
+<li>Ако имате Python, изпълнете:</li>
+</ol>
+<pre>python -m http.server 8000</pre>
+<ol start="4">
+<li>В browser отворете <code>http://localhost:8000</code>.</li>
+<li>Проверете, че сайтът изглежда като преди.</li>
+<li>За да спрете server-а, натиснете <strong>Ctrl+C</strong> в terminal-а.</li>
+</ol>
+<p class="small-note"><strong>localhost</strong> означава вашия собствен компютър/development environment. Сайтът още не е публичен.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-14">Стъпка 14. Направете пълен тест като турист</h2>
+<ol>
+<li>Отворете началото на сайта.</li>
+<li>Натиснете „Разгледай офертите“.</li>
+<li>Проверете трите продукта.</li>
+<li>Намалете прозореца и вижте дали cards стават една под друга.</li>
+<li>Натиснете „Изпрати заявка“.</li>
+<li>Опитайте submit с празни полета — browser validation трябва да се включи.</li>
+<li>Попълнете тестови данни.</li>
+<li>Проверете дали ориентировъчната цена е правилна.</li>
+<li>Refresh — резултатът ще изчезне, защото още няма back end.</li>
+</ol>
+</div>
+
+<div class="step-card">
+<h2 id="step-15">Стъпка 15. Направете самостоятелните промени</h2>
+<p>След като основната версия работи, изпълнете задачите от упражнението:</p>
+<ol>
+<li>Добавете четвърта туристическа оферта и цена в <code>tours</code>.</li>
+<li>Добавете поле „Телефон“ във формата.</li>
+<li>Добавете поле „Ниво на физическа подготовка“ със <code>select</code>.</li>
+<li>Променете цвета на основния бутон само чрез CSS.</li>
+<li>Добавете hover ефект върху <code>.card</code>.</li>
+<li>Променете breakpoint-а от 760 px на 900 px и наблюдавайте разликата.</li>
+</ol>
+</div>
+
+<div class="step-card">
+<h2 id="step-16">Стъпка 16. Какво трябва да предадете</h2>
+<p>Запазете в учебното си досие:</p>
+<ul>
+<li>папката с <code>index.html</code>, <code>styles.css</code> и <code>script.js</code>;</li>
+<li>папката <code>images</code>;</li>
+<li>screenshot на сайта на широк екран;</li>
+<li>screenshot на сайта на тесен екран;</li>
+<li>screenshot на успешна тестова заявка;</li>
+<li>кратък списък с три грешки, които сте срещнали, и как сте ги поправили.</li>
+</ul>
+
+<div class="check"><strong>Критерий за завършеност:</strong> трябва самостоятелно да можете да добавите HTML елемент, да го оформите с CSS, да свържете JavaScript с конкретен <code>id</code>, да проследите <code>submit</code> event и да обясните защо заявката не се запазва след Refresh.</div>
+</div>
+
+<h2 id="final-checklist">Финален checklist</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Проверка</th><th>Да/Не</th></tr></thead>
+<tbody>
+<tr><td>Работя в копие на проекта от Упражнение 1.</td><td></td></tr>
+<tr><td>Имам index.html, styles.css, script.js и images/.</td><td></td></tr>
+<tr><td>Имам header, navigation и hero секция.</td><td></td></tr>
+<tr><td>Имам три туристически оферти.</td><td></td></tr>
+<tr><td>CSS файлът е свързан и сайтът е оформен.</td><td></td></tr>
+<tr><td>Сайтът се адаптира при тесен екран.</td><td></td></tr>
+<tr><td>Имам форма за заявка с browser validation.</td><td></td></tr>
+<tr><td>JavaScript обработва submit и изчислява цена.</td><td></td></tr>
+<tr><td>Знам как да проверя Console при грешка.</td><td></td></tr>
+<tr><td>Мога да стартирам localhost или разбирам какво представлява.</td><td></td></tr>
+<tr><td>Имам необходимите screenshots и кратък списък с отстранени грешки.</td><td></td></tr>
+</tbody></table></div>
+
+<p><strong>Когато всички отговори са „Да“, Упражнение 2 е завършено.</strong></p>
+
+</article>
+
+<div class="source-note">Синтезирана постъпкова версия на Упражнение 2. Съдържанието следва оригиналния учебен HTML материал, но е съкратено и пренаредено като инструкция за начинаещи.</div>
+</section>
+</div>
+
+<aside aria-label="Съдържание" class="toc">
+<h2>Стъпки</h2>
+<ol>
+<li><a href="#step-1">1. Копие на проекта</a></li>
+<li><a href="#step-2">2. Трите файла</a></li>
+<li><a href="#step-3">3. Свързване на CSS</a></li>
+<li><a href="#step-4">4. Header и hero</a></li>
+<li><a href="#step-5">5. Три оферти</a></li>
+<li><a href="#step-6">6. Основен CSS</a></li>
+<li><a href="#step-7">7. Responsive дизайн</a></li>
+<li><a href="#step-8">8. Форма</a></li>
+<li><a href="#step-9">9. Свързване на JS</a></li>
+<li><a href="#step-10">10. JavaScript логика</a></li>
+<li><a href="#step-11">11. JS термини</a></li>
+<li><a href="#step-12">12. Developer Tools</a></li>
+<li><a href="#step-13">13. Local server</a></li>
+<li><a href="#step-14">14. End-to-end тест</a></li>
+<li><a href="#step-15">15. Самостоятелни задачи</a></li>
+<li><a href="#step-16">16. Предаване</a></li>
+<li><a href="#final-checklist">Checklist</a></li>
+</ol>
+</aside>
+</main>
+</body>
+</html>

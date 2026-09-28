@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Постъпкова инструкция за начинаещи за изпълнение на Упражнение 1 по Електронен бизнес и търговия в туризма."/>
+<title>Упражнение 1 · Постъпкова инструкция</title>
+<style>
+
+:root {
+  --bg: #f4f7f3;
+  --paper: #ffffff;
+  --ink: #17231d;
+  --muted: #5e6d64;
+  --line: #dbe5dd;
+  --brand: #246b45;
+  --brand-dark: #17472f;
+  --brand-soft: #e9f3ec;
+  --accent: #9a6b2f;
+  --code-bg: #15221b;
+  --code-ink: #eef8f1;
+  --shadow: 0 12px 32px rgba(23, 71, 47, .08);
+  --radius: 18px;
+  --content: 860px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  line-height: 1.68;
+  font-size: 17px;
+}
+a { color: var(--brand-dark); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { color: var(--brand); }
+.site-header {
+  position: sticky; top: 0; z-index: 30;
+  background: rgba(244,247,243,.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.topbar {
+  max-width: 1320px; margin: 0 auto; min-height: 64px; padding: 9px 24px;
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 14px; align-items: center;
+}
+.brand { font-weight: 800; text-decoration: none; color: var(--brand-dark); letter-spacing: -.02em; }
+.topbar-center { color: var(--muted); font-size: .92rem; text-align: center; white-space: nowrap; }
+.topbar-actions { justify-self: end; display: flex; gap: 8px; }
+.nav-button {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 7px 12px;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--brand-dark);
+  text-decoration: none; font-weight: 700; font-size: .88rem;
+}
+.nav-button:hover { border-color: #aec4b4; background: var(--brand-soft); }
+.progress-track { height: 3px; background: #dfe8e1; }
+.progress-value { height: 100%; background: linear-gradient(90deg, var(--brand), #4e996a); }
+.page-shell {
+  max-width: 1320px; margin: 0 auto; padding: 34px 24px 72px;
+  display: grid; grid-template-columns: minmax(0, var(--content)) 300px; gap: 42px; align-items: start;
+}
+.article-card {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: clamp(28px, 5vw, 58px);
+}
+.exercise-kicker {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px;
+}
+.badge {
+  display: inline-flex; align-items: center; border: 1px solid #cfe0d3; background: var(--brand-soft);
+  color: var(--brand-dark); border-radius: 999px; padding: 5px 10px; font-size: .78rem; font-weight: 800;
+}
+.badge.stage { background: #f8f2e9; border-color: #eadbc4; color: #6c4a20; }
+article h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.08; letter-spacing: -.04em; margin: .25em 0 .45em; color: var(--brand-dark); }
+article h2 { font-size: clamp(1.35rem, 3vw, 1.8rem); line-height: 1.22; letter-spacing: -.02em; margin: 2.2em 0 .65em; padding-top: .25em; color: #1c5037; }
+article h3 { font-size: 1.15rem; margin: 1.8em 0 .55em; color: #284f3b; }
+article p { margin: .85em 0; }
+article > p:nth-of-type(1) { font-size: 1.06rem; }
+article strong { color: #21392c; }
+article ul, article ol { padding-left: 1.45em; }
+article li { margin: .34em 0; }
+article img { display: block; max-width: 100% !important; height: auto !important; margin: 1.35rem auto; border-radius: 12px; }
+article figure { margin: 1.8rem 0; }
+article figcaption { color: var(--muted); font-size: .9rem; text-align: center; }
+.table-wrap { width: 100%; overflow-x: auto; margin: 1.35rem 0 1.7rem; border: 1px solid var(--line); border-radius: 12px; }
+article table { width: 100% !important; border-collapse: collapse; margin: 0; font-size: .92rem; background: #fff; }
+article th, article td { border-bottom: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+article th { background: #eef5f0; color: #234a34; font-weight: 800; }
+article tr:last-child td { border-bottom: 0; }
+article blockquote {
+  margin: 1.3rem 0; padding: 14px 18px; border-left: 4px solid #8fbc9c; background: #f1f7f3;
+  border-radius: 0 10px 10px 0; color: #294437;
+}
+article pre {
+  position: relative; overflow-x: auto; margin: 1.25rem 0 1.6rem; padding: 18px 20px;
+  background: var(--code-bg); color: var(--code-ink); border-radius: 13px; border: 1px solid #263a30;
+  font: 0.88rem/1.58 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  white-space: pre; tab-size: 4;
+}
+article code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+article p code, article li code { background: #edf3ef; border: 1px solid #d8e3db; border-radius: 6px; padding: .08em .33em; color: #244732; }
+.toc {
+  position: sticky; top: 94px; max-height: calc(100vh - 120px); overflow: auto;
+  background: rgba(255,255,255,.78); border: 1px solid var(--line); border-radius: 16px; padding: 18px;
+}
+.toc h2 { margin: 0 0 10px; font-size: .98rem; color: var(--brand-dark); }
+.toc ol { list-style: none; padding: 0; margin: 0; }
+.toc li { margin: 0; }
+.toc a { display: block; padding: 6px 8px; border-radius: 7px; color: #496157; text-decoration: none; font-size: .83rem; line-height: 1.3; }
+.toc a:hover { background: var(--brand-soft); color: var(--brand-dark); }
+.bottom-nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; margin-top: 30px; }
+.bottom-nav .next { justify-self: end; }
+.bottom-nav .home { justify-self: center; }
+.source-note { margin-top: 28px; color: #748179; font-size: .78rem; border-top: 1px solid var(--line); padding-top: 14px; overflow-wrap: anywhere; }
+
+/* index */
+.home-body { background: linear-gradient(180deg, #edf4ef 0, #f6f8f6 360px, #f4f7f3 100%); }
+.home-header { max-width: 1180px; margin: 0 auto; padding: 64px 24px 28px; }
+.home-eyebrow { color: var(--brand); font-weight: 800; text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; }
+.home-title { max-width: 900px; margin: 12px 0 18px; font-size: clamp(2.5rem, 7vw, 5rem); line-height: .98; letter-spacing: -.055em; color: var(--brand-dark); }
+.home-lead { max-width: 790px; margin: 0; color: #52655a; font-size: clamp(1rem, 2vw, 1.22rem); }
+.home-metrics { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+.metric { background: rgba(255,255,255,.78); border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px; }
+.metric strong { display: block; color: var(--brand-dark); font-size: 1.15rem; }
+.metric span { color: var(--muted); font-size: .8rem; }
+.index-shell { max-width: 1180px; margin: 0 auto; padding: 16px 24px 72px; }
+.stage-map { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; margin: 0 0 38px; }
+.stage-dot { min-height: 8px; border-radius: 999px; background: #c8d8cd; }
+.stage-dot:nth-child(-n+8) { background: linear-gradient(90deg,#6ca47d,#2d7550); }
+.search-row { display: flex; gap: 12px; align-items: center; margin: 0 0 34px; }
+.search-box { width: min(100%, 520px); background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 12px 16px; font: inherit; outline: none; }
+.search-box:focus { border-color: #82ad90; box-shadow: 0 0 0 4px rgba(73,143,95,.10); }
+.stage-section { margin: 46px 0; }
+.stage-heading { display: grid; grid-template-columns: minmax(0,1fr) minmax(250px, .8fr); gap: 24px; align-items: end; padding-bottom: 15px; border-bottom: 1px solid var(--line); }
+.stage-heading h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.15rem); color: var(--brand-dark); letter-spacing: -.03em; }
+.stage-heading p { margin: 0; color: var(--muted); font-size: .92rem; }
+.cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin-top: 18px; }
+.exercise-card { position: relative; display: block; min-height: 220px; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px; text-decoration: none; box-shadow: 0 10px 28px rgba(23,71,47,.045); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }
+.exercise-card:hover { transform: translateY(-3px); border-color: #adc7b5; box-shadow: 0 16px 34px rgba(23,71,47,.10); }
+.card-number { display: inline-flex; min-width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 12px; background: var(--brand-soft); color: var(--brand-dark); font-weight: 900; }
+.card-stage { position: absolute; right: 18px; top: 18px; color: #7c694c; font-size: .76rem; font-weight: 800; }
+.exercise-card h3 { margin: 18px 0 8px; color: #1a442f; font-size: 1.16rem; line-height: 1.25; }
+.exercise-card p { margin: 0; color: #617066; font-size: .91rem; line-height: 1.5; }
+.card-arrow { position: absolute; right: 20px; bottom: 17px; font-size: 1.2rem; color: #7ba187; }
+.index-footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: .86rem; }
+.hidden-card { display: none !important; }
+.no-results { display:none; padding: 18px; border:1px dashed #b6c9bb; border-radius: 12px; color: var(--muted); }
+
+@media (max-width: 980px) {
+  .page-shell { grid-template-columns: 1fr; }
+  .toc { position: static; max-height: none; order: -1; }
+  .topbar { grid-template-columns: 1fr auto; }
+  .topbar-center { display: none; }
+  .stage-heading { grid-template-columns: 1fr; gap: 8px; }
+}
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+  .topbar { padding: 8px 14px; }
+  .brand { max-width: 180px; font-size: .9rem; }
+  .nav-button { padding: 7px 9px; font-size: .8rem; }
+  .page-shell { padding: 18px 12px 50px; }
+  .article-card { padding: 24px 18px; border-radius: 14px; }
+  .cards { grid-template-columns: 1fr; }
+  .home-header { padding-top: 42px; }
+  .stage-map { grid-template-columns: repeat(4,1fr); }
+  .bottom-nav { grid-template-columns: 1fr 1fr; }
+  .bottom-nav .home { grid-column: 1 / -1; grid-row: 2; }
+}
+@media print {
+  body { background: #fff; font-size: 11pt; }
+  .site-header, .toc, .bottom-nav, .source-note { display: none !important; }
+  .page-shell { display: block; max-width: none; padding: 0; }
+  .article-card { box-shadow: none; border: 0; padding: 0; }
+  article a { color: #000; text-decoration: none; }
+  article h2, article h3 { break-after: avoid-page; }
+  article pre, article table, article img { break-inside: avoid; }
+}
+
+.step-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 1.4rem 0;
+  background: #fbfdfb;
+}
+.step-card h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.do-now {
+  border-left: 4px solid var(--brand);
+  background: var(--brand-soft);
+  padding: 12px 16px;
+  border-radius: 0 10px 10px 0;
+  margin: 1rem 0;
+}
+.check {
+  border-left: 4px solid var(--accent);
+  background: #fbf6ee;
+  padding: 12px 16px;
+  border-radius: 0 10px 10px 0;
+  margin: 1rem 0;
+}
+.mini-output {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+.code-label {
+  font-weight: 800;
+  margin: 1.1rem 0 .45rem;
+  color: #284f3b;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar">
+    <div class="brand">Електронен бизнес и търговия в туризма</div>
+    <div class="topbar-center">Упражнение 1 · кратка инструкция</div>
+    <div class="topbar-actions"><span class="nav-button">За начинаещи</span></div>
+  </div>
+  <div class="progress-track"><div class="progress-value" style="width:6.67%"></div></div>
+</header>
+
+<main class="page-shell">
+<div>
+<section class="article-card">
+<div class="exercise-kicker">
+  <span class="badge">90 минути</span>
+  <span class="badge stage">От идея до първа web страница</span>
+</div>
+
+<article>
+<h1>Упражнение 1: направете първата си туристическа web страница</h1>
+
+<p><strong>Цел:</strong> до края на упражнението да имате ясна туристическа идея, попълнен кратък e-business паспорт, папка с файл <code>index.html</code> и работеща web страница, която се отваря в браузър.</p>
+
+<blockquote>
+<strong>Не са нужни предварителни знания по програмиране.</strong> Работете стъпка по стъпка. Не прескачайте напред, ако предишната стъпка още не е завършена.
+</blockquote>
+
+<div class="step-card">
+<h2 id="step-1">Стъпка 1. Опишете бизнеса си с едно изречение</h2>
+<p>Преди да правите сайт, трябва да е ясно <strong>за кого</strong> е бизнесът, <strong>какъв проблем</strong> решава и <strong>какво предлага</strong>.</p>
+<div class="do-now"><strong>Напишете:</strong><br>„Моят туристически бизнес помага на … да … чрез …“</div>
+<p><strong>Пример:</strong> „Зелени пътеки България“ помага на хора, които искат активен уикенд сред природата, да откриват малки групови турове с местни водачи.</p>
+<div class="check"><strong>Проверка:</strong> можете ли да го обясните за около 30 секунди без думи като AI, cloud, приложение или платформа?</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-2">Стъпка 2. Изберете един конкретен клиент</h2>
+<p>Не пишете „всички туристи“. Изберете една основна група, за която ще правите първата версия.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Поле</th><th>Какво да напишете</th></tr></thead>
+<tbody>
+<tr><td>Кой е клиентът?</td><td>Напр. Мария, 34 г., София</td></tr>
+<tr><td>Какво иска?</td><td>Напр. активен уикенд без сложна организация</td></tr>
+<tr><td>Какво я притеснява?</td><td>Цена, трудност, условия, анулиране</td></tr>
+<tr><td>Как търси?</td><td>Google, Instagram, препоръки</td></tr>
+<tr><td>Какво я кара да резервира?</td><td>Ясна цена, снимки, дата, доверие</td></tr>
+</tbody></table></div>
+<p class="mini-output">Резултат: една конкретна персона.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-3">Стъпка 3. Направете една конкретна туристическа оферта</h2>
+<p>Изберете само една оферта и я опишете достатъчно ясно.</p>
+<ul>
+<li>име на офертата;</li>
+<li>място;</li>
+<li>продължителност;</li>
+<li>дата или период;</li>
+<li>цена;</li>
+<li>какво е включено;</li>
+<li>какво не е включено;</li>
+<li>ниво на трудност;</li>
+<li>максимален брой участници;</li>
+<li>какво трябва да направи клиентът след това.</li>
+</ul>
+<div class="check"><strong>Проверка:</strong> човек, който не е слушал курса, трябва да разбере какво купува без да задава много допълнителни въпроси.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-4">Стъпка 4. Нарисувайте пътя на клиента</h2>
+<p>Запишете последователността:</p>
+<p><strong>Открива → Разглежда → Избира → Заявява → Потвърждава → Участва → Оценява</strong></p>
+<div class="do-now">За всяка стъпка запишете: <strong>какво прави клиентът</strong>, <strong>какъв въпрос има</strong> и <strong>какво трябва да му даде бизнесът</strong>.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-5">Стъпка 5. Превърнете нуждите във функции</h2>
+<p>За всяка стъпка от пътя на клиента запишете най-малката цифрова функция, която е нужна.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Нужда</th><th>Минимална функция</th></tr></thead>
+<tbody>
+<tr><td>Да види офертите</td><td>Страница с оферти</td></tr>
+<tr><td>Да разбере детайлите</td><td>Страница на оферта</td></tr>
+<tr><td>Да избере дата</td><td>Списък със свободни дати</td></tr>
+<tr><td>Да подаде заявка</td><td>Кратка web форма</td></tr>
+<tr><td>Да получи потвърждение</td><td>Съобщение/e-mail</td></tr>
+</tbody></table></div>
+<p><strong>Не добавяйте още:</strong> сложен AI, мобилно приложение, динамични цени или enterprise архитектура.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-6">Стъпка 6. Направете прост бизнес модел</h2>
+<p>За една резервация запишете:</p>
+<ul>
+<li>продажна цена;</li>
+<li>приблизителни променливи разходи;</li>
+<li>каква сума приблизително остава преди общите разходи.</li>
+</ul>
+<p>Не търсете счетоводна точност. Целта е да видите икономическата логика.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-7">Стъпка 7. Определете вашето MVP</h2>
+<p>Разделете функциите в три колони:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Трябва сега</th><th>Полезно после</th><th>Не сега</th></tr></thead>
+<tbody>
+<tr><td>Начална страница</td><td>Потребителски профил</td><td>Мобилно приложение</td></tr>
+<tr><td>Оферта</td><td>Онлайн плащане</td><td>Сложна AI система</td></tr>
+<tr><td>Форма за заявка</td><td>Календар</td><td>Динамично ценообразуване</td></tr>
+</tbody></table></div>
+<p><strong>Правило:</strong> ако не сте сигурни дали функцията е нужна сега, сложете я в „Полезно после“.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-8">Стъпка 8. Попълнете e-business паспорта</h2>
+<p>Съберете всичко от предишните стъпки в една кратка спецификация:</p>
+<ul>
+<li>име на бизнеса;</li>
+<li>основен клиент;</li>
+<li>проблем/желание;</li>
+<li>основно предложение;</li>
+<li>първа оферта;</li>
+<li>основен клиентски поток;</li>
+<li>MVP функции;</li>
+<li>приход;</li>
+<li>основна метрика;</li>
+<li>какво <strong>няма</strong> да правите в първата версия.</li>
+</ul>
+<div class="check"><strong>Проверка:</strong> дайте го на колега. Той трябва да може да каже: „За кого е?“, „Какво прави клиентът?“ и „Как ще разберем, че работи?“</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-9">Стъпка 9. Отворете VS Code</h2>
+<p>Използвайте <strong>Visual Studio Code</strong>, не Visual Studio.</p>
+<ol>
+<li>Ако имате VS Code Desktop — отворете него.</li>
+<li>Ако нямате право да инсталирате програми — отворете <strong>vscode.dev</strong> в Chrome или Edge.</li>
+<li>Помнете: VS Code е мястото, където <strong>пишете файла</strong>; браузърът е мястото, където <strong>виждате резултата</strong>.</li>
+</ol>
+</div>
+
+<div class="step-card">
+<h2 id="step-10">Стъпка 10. Създайте проектна папка и index.html</h2>
+<ol>
+<li>В <strong>Documents</strong> създайте папка <code>zeleni-pateki-bulgaria</code>.</li>
+<li>Във VS Code изберете <strong>File → Open Folder</strong>.</li>
+<li>Отворете папката.</li>
+<li>В левия Explorer създайте файл с име <code>index.html</code>.</li>
+<li>Проверете да не е <code>index.html.txt</code>.</li>
+</ol>
+<p class="mini-output">Резултат: една папка + един празен файл index.html.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-11">Стъпка 11. Напишете първия HTML</h2>
+<p>Копирайте кода по-долу в <code>index.html</code>.</p>
+<div class="code-label">Първа версия:</div>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="bg"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Зелени пътеки България&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Зелени пътеки България&lt;/h1&gt;
+  &lt;p&gt;Малки приключения сред природата, подбрани с грижа.&lt;/p&gt;
+  &lt;h2&gt;Нашата първа оферта&lt;/h2&gt;
+  &lt;h3&gt;Уикенд в Западните Родопи&lt;/h3&gt;
+  &lt;p&gt;Двудневно пешеходно преживяване за малка група.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<ol>
+<li>Натиснете <strong>Ctrl+S</strong>.</li>
+<li>Намерете <code>index.html</code> във File Explorer.</li>
+<li>Кликнете два пъти върху файла.</li>
+<li>Той трябва да се отвори в браузър.</li>
+</ol>
+<div class="check"><strong>Ако виждате заглавието и текста:</strong> първата ви web страница работи.</div>
+</div>
+
+<div class="step-card">
+<h2 id="step-12">Стъпка 12. Заменете примера с реална туристическа оферта</h2>
+<p>Заменете съдържанието между <code>&lt;body&gt;</code> и <code>&lt;/body&gt;</code> с по-пълна версия:</p>
+<pre>&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Зелени пътеки България&lt;/h1&gt;
+    &lt;p&gt;Малки приключения сред природата, подбрани с грижа.&lt;/p&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Уикенд в Западните Родопи&lt;/h2&gt;
+      &lt;p&gt;Двудневно пешеходно преживяване за начинаещи туристи.&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Продължителност: 2 дни&lt;/li&gt;
+        &lt;li&gt;Група: до 10 участници&lt;/li&gt;
+        &lt;li&gt;Ниво: начинаещи&lt;/li&gt;
+        &lt;li&gt;Цена: 220 лв. на човек&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;&lt;strong&gt;Следваща дата:&lt;/strong&gt; 12–13 септември&lt;/p&gt;
+      &lt;a href="mailto:info@zeleni-pateki.example?subject=Запитване за Родопите"&gt;
+        Изпрати запитване
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;Учебен проект „Зелени пътеки България“&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;</pre>
+<p><strong>После:</strong> Ctrl+S → върнете се в браузъра → Ctrl+R.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-13">Стъпка 13. Добавете минимално CSS оформление</h2>
+<p>В <code>&lt;head&gt;</code>, точно преди <code>&lt;/head&gt;</code>, добавете:</p>
+<pre>&lt;style&gt;
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 1.6;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+section {
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  text-decoration: none;
+}
+&lt;/style&gt;</pre>
+<p>Отново: <strong>Ctrl+S → Ctrl+R</strong>.</p>
+<p><strong>Не се стремете към красив дизайн.</strong> Целта е да видите как CSS променя начина, по който изглежда HTML съдържанието.</p>
+</div>
+
+<div class="step-card">
+<h2 id="step-14">Стъпка 14. Персонализирайте страницата</h2>
+<p>Сега променете примера така, че да е ваш:</p>
+<ol>
+<li>сменете името на бизнеса;</li>
+<li>сменете офертата;</li>
+<li>сменете цена и дата;</li>
+<li>добавете списък „Какво е включено“ с поне 3 елемента;</li>
+<li>добавете <code>&lt;h2&gt;За нас&lt;/h2&gt;</code> и 2–3 изречения;</li>
+<li>променете поне едно CSS правило и вижте какво става.</li>
+</ol>
+</div>
+
+<div class="step-card">
+<h2 id="step-15">Стъпка 15. Ако нещо не работи — проверете това</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Проблем</th><th>Какво да направите</th></tr></thead>
+<tbody>
+<tr><td>Файлът се отваря като текст</td><td>Проверете дали е <code>.html</code>, не <code>.txt</code>; Open with → browser.</td></tr>
+<tr><td>Кирилицата е странна</td><td>Проверете <code>&lt;meta charset="UTF-8"&gt;</code>.</td></tr>
+<tr><td>Промяната не се вижда</td><td>Ctrl+S във VS Code, после Ctrl+R в браузъра.</td></tr>
+<tr><td>Линкът не работи</td><td>Проверете <code>href</code>; <code>mailto:</code> е само временен учебен вариант.</td></tr>
+<tr><td>В vscode.dev няма terminal</td><td>Нормално е. За terminal използвайте VS Code Desktop или Codespaces.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="step-card">
+<h2 id="step-16">Стъпка 16. Финална проверка и предаване</h2>
+<p>Трябва да можете да покажете:</p>
+<ul>
+<li>попълнен <strong>e-business паспорт</strong>;</li>
+<li>папка на проекта;</li>
+<li>файл <code>index.html</code> във VS Code;</li>
+<li>работеща страница в браузър;</li>
+<li>поне една промяна, направена от вас;</li>
+<li>screenshot на страницата;</li>
+<li>3–5 изречения рефлексия: какво беше ново, какво не проработи от първия път и как го поправихте.</li>
+</ul>
+<div class="check"><strong>Последен тест:</strong> направете малка промяна във VS Code → Ctrl+S → върнете се в браузъра → Ctrl+R. Ако промяната се вижда, основната практическа цел е изпълнена.</div>
+</div>
+
+<h2 id="final-checklist">Финален checklist</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Проверка</th><th>Да/Не</th></tr></thead>
+<tbody>
+<tr><td>Имам конкретен клиент и туристическа оферта.</td><td></td></tr>
+<tr><td>Имам попълнен e-business паспорт.</td><td></td></tr>
+<tr><td>Имам проектна папка и index.html.</td><td></td></tr>
+<tr><td>Страницата се отваря в браузър.</td><td></td></tr>
+<tr><td>Кирилицата се вижда правилно.</td><td></td></tr>
+<tr><td>Имам туристическа оферта със списък и линк за действие.</td><td></td></tr>
+<tr><td>Добавил/а съм минимално CSS оформление.</td><td></td></tr>
+<tr><td>Мога да направя Save → Refresh и да видя промяната.</td><td></td></tr>
+<tr><td>Имам screenshot и кратка рефлексия.</td><td></td></tr>
+</tbody></table></div>
+
+<p><strong>Когато всички отговори са „Да“, Упражнение 1 е завършено.</strong></p>
+</article>
+
+<div class="source-note">Синтезирана постъпкова версия на материала за Упражнение 1. Запазени са задачите, примерите, кодът и критериите за завършеност от оригиналния учебен HTML материал.</div>
+</section>
+</div>
+
+<aside aria-label="Съдържание" class="toc">
+<h2>Стъпки</h2>
+<ol>
+<li><a href="#step-1">1. Бизнес идея</a></li>
+<li><a href="#step-2">2. Клиент</a></li>
+<li><a href="#step-3">3. Оферта</a></li>
+<li><a href="#step-4">4. Път на клиента</a></li>
+<li><a href="#step-5">5. Функции</a></li>
+<li><a href="#step-6">6. Бизнес модел</a></li>
+<li><a href="#step-7">7. MVP</a></li>
+<li><a href="#step-8">8. E-business паспорт</a></li>
+<li><a href="#step-9">9. VS Code</a></li>
+<li><a href="#step-10">10. Папка + index.html</a></li>
+<li><a href="#step-11">11. Първи HTML</a></li>
+<li><a href="#step-12">12. Реална оферта</a></li>
+<li><a href="#step-13">13. CSS</a></li>
+<li><a href="#step-14">14. Персонализация</a></li>
+<li><a href="#step-15">15. Проблеми</a></li>
+<li><a href="#step-16">16. Предаване</a></li>
+<li><a href="#final-checklist">Checklist</a></li>
+</ol>
+</aside>
+</main>
+</body>
+</html>
